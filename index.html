@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="bower_components/nvd3/build/nv.d3.min.css"/>
+		<link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.min.css"/>
+		<link rel="stylesheet" type="text/css" href="bower_components/angular-material-icons/angular-material-icons.css"></script>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+	</head>
+	<body ng-app="app" ng-cloak ng-controller="mainController as vm" layout-fill layout='column'>
+		
+		<!--navigation-->
+		
+		<!--header-->
+		<md-toolbar>
+        	<div class="md-toolbar-tools">       
+          		<h2><span>{{ vm.title }}</span></h2>
+        	</div>
+    	</md-toolbar>   
+		
+		<main class="md-padding" layout="row" flex>
+			<!--view port for SPA-->
+			<md-conten>
+				<ng-view></ng-view>
+			</md-content>
+		</main>
+		
+		<!--footer-->		
+		<md-bottom-sheet>
+      		<div>I am a sticky footer</div>
+   		</md-bottom-sheet>
+		
+		<!-- libraries -->		        			
+		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-aria/angular-aria.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-animate/angular-animate.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-material/angular-material.js"></script>
+		<script type="text/javascript" src="/bower_components/d3/d3.min.js"></script>
+		<script type="text/javascript" src="/bower_components/nvd3/build/nv.d3.min.js"></script>	
+		<script type="text/javascript" src="/bower_components/angular-nvd3/dist/angular-nvd3.min.js"></script>
+		
+		<script type="text/javascript" src="/bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+		
+		<!-- applicaiton -->
+		<script type="text/javascript" src="/app/app.js"></script>
+		<script type="text/javascript" src="/app/components/home/homeController.js"></script>					
+		<!--script type="text/javascript" src="/app/services/services.js"></script-->		
+	</body>
+</html>

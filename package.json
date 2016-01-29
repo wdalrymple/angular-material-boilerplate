@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/wdalrymple/angular-material-boilerplate/issues"
   },
-  "homepage": "https://github.com/wdalrymple/angular-material-boilerplate#readme"
+  "homepage": "https://github.com/wdalrymple/angular-material-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "winston": "^2.1.1"
+  }
 }

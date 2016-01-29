@@ -1,0 +1,32 @@
+{
+  "name": "angular-material-boilerplate",
+  "description": "boilterplate project to play with material and angular",
+  "main": "index.js",
+  "authors": [
+    "Matthew Dalrymple"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "material-design",
+    "d3"
+  ],
+  "homepage": "https://github.com/wdalrymple/angular-material-boilerplate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-nvd3": "~1.0.5",
+    "angular": "~1.4.9",
+    "d3": "~3.5.14",
+    "nvd3": "~1.8.2",
+    "angular-material": "~1.0.3",
+    "angular-route": "~1.4.9",
+    "angular-material-icons": "~0.6.0"
+  }
+}
