@@ -1,0 +1,24 @@
+{
+  "name": "angular-material-boilterplate",
+  "version": "1.0.0",
+  "description": "boilterplate project to play with material and angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdalrymple/angular-material-boilerplate.git"
+  },
+  "keywords": [
+    "angularjs",
+    "material-design",
+    "d3"
+  ],
+  "author": "Matthew Dalrymple",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wdalrymple/angular-material-boilerplate/issues"
+  },
+  "homepage": "https://github.com/wdalrymple/angular-material-boilerplate#readme"
+}
