@@ -1,0 +1,17 @@
+.questionaire-question {
+	width: 500px;
+}
+
+.questionaire-question-selected{
+	background-color: #f2f7f7;
+}
+
+.upanddown{
+	width:24px;
+	height:24px;
+}
+
+.side-bar{
+	text-align:left;
+	width:100%;
+}

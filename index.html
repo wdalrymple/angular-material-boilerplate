@@ -6,28 +6,49 @@
 		<link rel="stylesheet" type="text/css" href="main.css"/>
 	</head>
 	<body ng-app="app" ng-cloak ng-controller="mainController as vm" layout-fill layout='column'>
-		
-		<!--navigation-->
-		
+					
 		<!--header-->
 		<md-toolbar>
         	<div class="md-toolbar-tools">       
+				<md-button class="md-icon-button" aria-label="Navigation" ng-click="vm.openLeftMenu()">
+					<ng-md-icon icon="menu" style="fill: white" size="24"></ng-md-icon>
+				</md-button>
           		<h2><span>{{ vm.title }}</span></h2>
         	</div>
-    	</md-toolbar>   
+    	</md-toolbar>
 		
-		<main class="md-padding" layout="row" flex>
-			<!--view port for SPA-->
-			<md-conten>
-				<ng-view></ng-view>
-			</md-content>
+		<!--navigation-->
+		<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+			<md-toolbar md-scroll-shrink>
+				<div class="md-toolbar-tools">
+					<md-button class="md-icon-button" aria-label="Navigation" ng-click="vm.openLeftMenu()">
+						<ng-md-icon icon="navigate_before" sytle="fill:white" size="24"></ng-md-icon>
+					</md-button>
+					<h3>
+						Navigation
+					</h3>
+				</div>
+		    </md-toolbar>
+			<md-list class="md-padding">
+				<md-list-item>					
+					<md-button class="nav-button side-bar" ng-href="../#/" ng-click="vm.openLeftMenu()">Home</md-button>
+				</md-list-item>
+			</md-list>
+			
+	    </md-sidenav>
+
+		<!--view port for SPA-->				
+		<main class="md-padding" layout="row" flex>			
+			<ng-view layout="column" layout-fill layout-padding></ng-view>			
 		</main>
 		
 		<!--footer-->		
-		<md-bottom-sheet>
-      		<div>I am a sticky footer</div>
-   		</md-bottom-sheet>
-		
+		<md-toolbar class="md-medium-short">
+			<div class="md-toolbar-tools">        	
+          		<span>FOOTER</span>        	
+			</div>
+      	</md-toolbar>   
+		  		
 		<!-- libraries -->		        			
 		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
 		<script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
@@ -43,6 +64,6 @@
 		<!-- applicaiton -->
 		<script type="text/javascript" src="/app/app.js"></script>
 		<script type="text/javascript" src="/app/components/home/homeController.js"></script>					
-		<!--script type="text/javascript" src="/app/services/services.js"></script-->		
+		<script type="text/javascript" src="/app/services/services.js"></script>		
 	</body>
 </html>
